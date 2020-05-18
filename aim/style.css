@@ -1,0 +1,154 @@
+html,body{
+    height: 100vh;
+    width: 100vw;
+margin:0;
+padding: 0;
+box-sizing: border-box;
+overflow:auto;
+display: grid;
+}
+.ball{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: orchid;
+  animation: hello 1s ease-in-out infinite;
+  display:none;
+
+    
+}
+.ballarea{
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    margin-top:10%;
+}
+
+@keyframes hello {
+    0% {
+        background-color: white;
+ 
+    }
+  
+    
+    100% {
+    
+    }
+  }
+  .scores{
+      text-align: center;
+      background-color: darkorange;
+      height: 10%;
+      width: 15%;
+      font-family: Impact, Charcoal, sans-serif	;
+position:absolute;
+      margin-left:90%;
+      transform: translate(-50%);
+      border-bottom: solid 10px darkslategray;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+
+    }
+    #texts{
+        margin-top:5%;
+    }
+    .times{
+        font-family: Impact, Charcoal, sans-serif	;
+
+        position: absolute;
+        transform: translate(-50%);
+      background-color: darkorange;
+      border-bottom: solid 10px ;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+  text-align: center;
+        height: 10%;
+        width: 15%;
+        margin-left: 50%;
+      border-bottom: solid 10px darkslategray;
+    }
+    .playb{
+        font-family: Impact, Charcoal, sans-serif	;
+   
+        position: absolute;
+        transform: translate(-50%);
+      background-color: darkorange;
+      border-bottom: solid 10px ;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+  text-align: center;
+        height: 10%;
+        width: 15%;
+        cursor:grab;
+        margin-left: 10%;
+      border-bottom: solid 10px darkslategray;
+    }
+    .playb:hover{
+        background-color: orangered;
+    }
+    .playb:active {
+        background-color: orangered;
+        box-shadow: 0 5px #666;
+    }
+    .gameOver{
+        text-align: center;
+      background-color: darkorange;
+    position: absolute;
+        width: 20%;
+        height: 30%;
+        margin-top: 20%;
+        display:none;
+        margin-left: 50%;
+        transform: translate(-50%);
+      border: solid 10px  darkslategray;
+z-index: 1;
+    }
+   h1{
+       margin-top: 10%;
+   }
+   #texts{
+       margin-top:10%;
+   }
+   #gameo{
+       margin-top: 20%;
+       font-family: Impact, Charcoal, sans-serif	;
+
+   }
+   #restartb{
+    font-family: Impact, Charcoal, sans-serif	;
+cursor:grab;
+
+   }
+   #incorrect{
+    font-family: Impact, Charcoal, sans-serif	;
+
+   }
+   #targethit{
+    font-family: Impact, Charcoal, sans-serif	;
+
+   }
+#gamestarted{
+  position: absolute;
+  width: 20%;
+  margin-left: 50%;
+  font-size: 1rem;
+  margin-top: 25%;
+  font-family: Impact, Charcoal, sans-serif	;
+
+  transform: translate(-25%);
+  display: none;
+  animation: game 1.5s ease-in-out infinite;
+
+  
+}
+@keyframes game {
+  0% {
+      background-color: white;
+
+  }
+
+  
+  100% {
+   font-size: 3rem;
+  }
+}
